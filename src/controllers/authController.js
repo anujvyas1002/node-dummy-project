@@ -3,7 +3,6 @@ const User = require("../models/Users");
 
 exports.register = async (req, res) => {
   try {
-    console.log("BODY DATA:", req.body);
     const { name, email, password } = req.body;
 
     const user = new User({ name, email, password });
